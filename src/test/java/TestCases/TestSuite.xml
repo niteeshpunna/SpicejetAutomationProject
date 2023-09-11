@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+
+	<listeners>
+	<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+  <test thread-count="5" verbose="2" name="Default test">
+    <parameter name="browser" value ="chrome" />
+    <classes>
+      <class name="TestCases.TC_01_SignUp"/>
+      <class name="TestCases.TC_02_ValidLogin"/>
+      <class name="TestCases.TC_03_InvalidLoginAttempts"/>
+      <class name="TestCases.TC_04_OnewayFlightSearch"/>
+      <class name="TestCases.TC_05_RoundTripFlightSearch"/>
+      <class name="TestCases.TC_06_FlightSelection"/>
+      <class name="TestCases.TC_07_FlightBookingWithPayment"/>
+      <class name="TestCases.TC_08_ValidationFields"/>
+      
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
